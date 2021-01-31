@@ -53,7 +53,7 @@ public class InputManager : MonoBehaviour
         _clickable.Remove(clickable);
     }
 
-    private void Click(IClickable currentClickable)
+    public IClickable Click(IClickable currentClickable)
     {
         for (int i = 0; i < _clickable.Count; i++)
         {
@@ -61,7 +61,10 @@ public class InputManager : MonoBehaviour
             if (_clickable[i] == currentClickable)
             {
                 _clickable[i].Notify();
+                return _clickable[i];
             }
         }
+
+        return null;
     }
 }

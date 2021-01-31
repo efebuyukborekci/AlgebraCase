@@ -125,12 +125,6 @@
      <Compile Include="Assets\AlmostEngine\UniversalDevicePreview\Assets\Scripts\UniversalDevicePreview.cs" />
      <Compile Include="Assets\AlmostEngine\UniversalDevicePreview\Example\Scripts\DebugValuesUI.cs" />
      <Compile Include="Assets\AlmostEngine\UniversalDevicePreview\Example\Scripts\HideAndroidButtons.cs" />
-     <Compile Include="Assets\Scripts\CameraRatio.cs" />
-     <Compile Include="Assets\Scripts\ChangeScene.cs" />
-     <Compile Include="Assets\Scripts\DynamicObject.cs" />
-     <Compile Include="Assets\Scripts\IClickable.cs" />
-     <Compile Include="Assets\Scripts\InputManager.cs" />
-     <Compile Include="Assets\Scripts\PlaceObjects.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Unity Projects/AlgebraCase/AlgebraCase/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -683,6 +677,12 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Scripts.csproj">
+      <Project>{B1ADEC55-10F7-8AF8-538B-E3D12AAD9623}</Project>
+      <Name>Scripts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

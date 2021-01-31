@@ -19,10 +19,10 @@ public class PlaceObjects : MonoBehaviour
         SOUTH_EAST
     }
 
-    private readonly Vector2 _northWest = new Vector2(0, 1);
-    private readonly Vector2 _northEast = new Vector2(1, 1);
-    private readonly Vector2 _southWest = new Vector2(0, 0);
-    private readonly Vector2 _southEast = new Vector2(1, 0);
+    public readonly Vector2 _northWest = Vector2.up;
+    public readonly Vector2 _northEast = Vector2.up + Vector2.right;
+    public readonly Vector2 _southWest = Vector2.zero;
+    public readonly Vector2 _southEast = Vector2.zero + Vector2.right;
     
     private void Start()
     {

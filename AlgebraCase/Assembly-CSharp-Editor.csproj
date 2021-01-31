@@ -312,9 +312,6 @@
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
- <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
- </Reference>
  <Reference Include="nunit.framework">
  <HintPath>D:/Unity Projects/AlgebraCase/AlgebraCase/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
@@ -677,6 +674,10 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{78387464-86A1-5B8E-16D9-6A37ED4B2B74}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Scripts.csproj">
+      <Project>{B1ADEC55-10F7-8AF8-538B-E3D12AAD9623}</Project>
+      <Name>Scripts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
